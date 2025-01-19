@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form page</h1>
+    <form action="{{ url_for('form_submit') }}" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <a href="{{ url_for('home') }}"><button>Home</button></a>
+    <a href="{{ url_for('about') }}"><button>About</button></a>
+    <a href="{{ url_for('greet') }}"><button>Greet</button></a>
+    <a href="{{ url_for('contact') }}"><button>Contact</button></a>
+  </body>
+</html>
